@@ -20,7 +20,7 @@
 }
 
 .modal__content{
-    padding: 20px;
+    padding: 18px;
     border-radius: 12px;
     background-color: white;
     height: 400px;
@@ -29,4 +29,5 @@
     width: 100%; 
     opacity: 1;
     z-index: 20;
+
 }
