@@ -1,0 +1,26 @@
+.nav_first{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.nav_first::after{
+    content: " → ";
+    font-size: 18px;
+}
+
+.nav_second{
+    font-size: 12px;
+    font-weight: 300px;
+    color: #6B49E8; 
+}
+.nav{
+    margin-bottom: 10px;
+    
+}
+
+
+.head_title{
+    
+    font-size: 20px;
+    font-weight: 900;
+}
