@@ -6,7 +6,7 @@ const BtnSubmit = ({setModalAcive}) =>{
     return (
         <button type="button" className="btn" onClick={() =>setModalAcive(true)}
         >Submit</button>
-        // <input type="button" className="btn" value="Submit"  />
+         
     )
 };
 

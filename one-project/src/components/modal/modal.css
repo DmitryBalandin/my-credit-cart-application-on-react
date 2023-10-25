@@ -15,15 +15,13 @@
     transform: scale(1);
 }
 
-.modal__card{
-    height: 200px;
-}
+
 
 .modal__content{
-    padding: 18px;
+    overflow: hidden;
     border-radius: 12px;
     background-color: white;
-    height: 400px;
+    height: 500px;
     max-width:500px;
     min-width: 400px;
     width: 100%; 
