@@ -10,9 +10,9 @@ const ModalCard = () =>{
                     <img src={imgBank}  alt="chip on card"/>
                 </div>
                 <div className="modal-card__date">
-                    <div className="modal-card__name-person"></div>
-                    <div className="modal-card__date-card"></div>
-                    <div className="modal-card__card-account"></div>
+                    <p className="modal-card__name-person">Pascal Benait</p>
+                    <p className="modal-card__date-card">09/25</p>
+                    <p className="modal-card__card-account">0000  0000  0000  1600</p>
                 </div>
                 <div className="modal-card__img">
                     <img src={iconBank} alt="img bank"/>

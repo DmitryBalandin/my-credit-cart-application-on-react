@@ -1,0 +1,18 @@
+.modul__field{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.modul__field__label{
+    font-size: 12px;
+    font-weight: 400;
+}
+.modul__field__input{
+    border-radius: 5px;
+    padding-left: 7px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #D9D9D9;
+}
