@@ -1,0 +1,6 @@
+.modal__btn-group{
+    margin: 30px 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
