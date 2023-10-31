@@ -2,6 +2,7 @@ import React from "react";
 import './modal-card.css';
 import imgBank from '../../icons/sim2.png'
 import iconBank from '../../icons/icons-card/alfabank-red.png'
+
 const ModalCard = () =>{
     return (
         <div className="modal-card">

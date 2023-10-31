@@ -1,14 +1,16 @@
-import React from 'react'
-import './list-card.css'
+import React from 'react';
+import './group-card.css';
+import ListCard from '../list card/list-card';
 import icon from '../../icons/card_credit_debit_internet_management_payment_security_icon_127042.png'
-import iconBank from '../../icons/icons-card/alfabank-red.png'
-import activeKeyCard from '../../icons/icon checked active.png'
-import unactiveKeyCard from '../../icons/icon checked unactive.png'
+import iconBank from '../../icons/icons-card/alfabank-red.png';
+import activeKeyCard from '../../icons/icon checked active.png';
+import unactiveKeyCard from '../../icons/icon checked unactive.png';
 
-const ListCard = () => {
+const GroupCard = () => {
     return (
         <ul className='list-cards'>
-            <li className='list-cards_card list-cards_card__active'>
+            <ListCard/>
+            {/* <li className='list-cards_card list-cards_card__active'>
                 <div><img src={iconBank} alt="ID Bank" /></div>
                 <div>XXXX XXXX XXXX 8908</div>
                 <div>Expiries</div>
@@ -20,7 +22,7 @@ const ListCard = () => {
                     <img src={activeKeyCard} alt="active key card" />
                 </div>
                 <div></div>
-            </li>
+            </li> */}
             <li className='list-cards_card'>
                 <div><img src={iconBank} alt="ID Bank" /></div>
                 <div>XXXX XXXX XXXX 8908</div>
@@ -55,4 +57,4 @@ const ListCard = () => {
     )
 };
 
-export default ListCard;
+export default GroupCard;

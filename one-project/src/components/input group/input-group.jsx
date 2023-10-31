@@ -1,5 +1,5 @@
 import React from "react";
-import InputField from "./input field/input-field";
+import InputField from "../input field/input-field";
 import './input-group.css';
 
 const InputGroup = () => {

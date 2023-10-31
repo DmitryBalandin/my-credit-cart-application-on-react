@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './body.css'
 import Header from "../header/header";
 import BtnSubmit from "../btn-submit/btn-submit";
-import ListCard from "../list-card/list-card";
+import GroupCard from "../group-card/group-card";
 import Modal from "../modal/modal";
 const Container = () => {
     const [modalActive, setModalAcive] = useState(true)
@@ -11,7 +11,7 @@ const Container = () => {
             <div className="screen">
                 <Header />
                 <form action="" className="screen_form">
-                    <ListCard />
+                    <GroupCard />
                     <BtnSubmit setModalAcive={setModalAcive}/>
                 </form>
             </div>
