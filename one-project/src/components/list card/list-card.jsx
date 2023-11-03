@@ -1,27 +1,47 @@
 import React, { useState } from "react";
 import "./list-card.css";
-import icon from '../../icons/card_credit_debit_internet_management_payment_security_icon_127042.png'
-import iconBank from '../../icons/icons-card/alfabank-red.png';
 import activeKeyCard from '../../icons/icon checked active.png';
 import unactiveKeyCard from '../../icons/icon checked unactive.png';
 
-const ListCard = () => {
-    const [listCardActive, setListCadrActive] = useState(false);
-    const handleClick = () => {
-        setListCadrActive(true);
-    }
+
+
+const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive }) => {
+
+
+    const handleClick = (event) => {
+        setCardActive({ active: true, id: event.currentTarget.id });
+        event.stopPropagation();
+    };
+
+    const handleDOubleCLick = (event) => {
+        setModalAcive({
+            active: true,
+            cardDate: {
+                id: event.currentTarget.id,
+                name: listDateCard.name,
+                number: listDateCard.number,
+                date: listDateCard.date,
+                img: listDateCard.img,
+                namePerson:listDateCard.namePerson
+            }
+        });
+
+    };
 
     return (
-        <li className={`list-cards_card ${listCardActive? "list-cards_card__active" : ""}`} onClick={handleClick}>
-            <div><img src={iconBank} alt="ID Bank" /></div>
-            <div>XXXX XXXX XXXX 8908</div>
-            <div>Expiries</div>
+        <li className={`list-cards_card ${cardActive.active && id == cardActive.id ? "list-cards_card__active" : ""}`} id={id}
+            onClick={handleClick}
+            onDoubleClick={(event) => handleDOubleCLick(event)}
+        >
+            <div><img src={listDateCard.img} alt="ID Bank" /></div>
+            <div>{listDateCard.number}</div>
+            <div>{listDateCard.name}</div>
             <div className='list-card_date'>
-                <span>09/27</span>
+                <span>{listDateCard.date}</span>
                 <span>Default</span>
             </div>
             <div>
-                <img src={listCardActive ? activeKeyCard:unactiveKeyCard} alt="active key card" />
+                <img src={cardActive.active && id == cardActive.id ? activeKeyCard : unactiveKeyCard} alt="active key card" />
             </div>
             <div></div>
         </li>

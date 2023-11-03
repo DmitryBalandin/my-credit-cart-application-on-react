@@ -39,7 +39,7 @@
 }
 
 .list-cards_card:not(:last-child) div:nth-child(2) {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 

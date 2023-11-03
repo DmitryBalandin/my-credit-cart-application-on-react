@@ -10,7 +10,6 @@
 
 .modal-card__content{
     position: relative;
-    /* overflow: hidden; */
     border-radius: 10px;
     height: 180px;
     width: 320px;
