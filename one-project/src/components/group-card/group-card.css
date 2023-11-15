@@ -117,13 +117,3 @@
 
 
 
-/* .list-cards_card:not(:last-child) div:nth-child(5)  {
-    position: relative;   
-}
-.list-cards_card:not(:last-child) div:nth-child(5)::before {
-    top: -20px;
-    width: 10px;
-    height: 30px;
-    position: absolute;
-    content: url(../../icons/icons-card/maestro.png);
-} */

@@ -5,7 +5,7 @@ import unactiveKeyCard from '../../icons/icon checked unactive.png';
 
 
 
-const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive }) => {
+const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive,modalActive }) => {
 
 
     const handleClick = (event) => {

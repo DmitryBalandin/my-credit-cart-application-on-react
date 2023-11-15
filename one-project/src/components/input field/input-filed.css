@@ -16,3 +16,11 @@
     font-weight: 500;
     background-color: #D9D9D9;
 }
+
+.modul__field__input:focus{
+    border: #7838D3 1px solid;
+}
+
+.no-pointer{
+    caret-color: transparent;
+}
