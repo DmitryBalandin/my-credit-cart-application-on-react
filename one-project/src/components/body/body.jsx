@@ -25,7 +25,8 @@ const Container = () => {
             number: "",
             date: "",
             img: iconBank4,
-            namePerson:""
+            namePerson:"",
+            crv:"",
         }
     });
     

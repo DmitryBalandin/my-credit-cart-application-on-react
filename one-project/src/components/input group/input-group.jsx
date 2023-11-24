@@ -12,17 +12,17 @@ const InputGroup = ( {modalActive,setModalActive } ) => {
             setModalActive={setModalActive}
             modalActive={modalActive} 
             />
-            <InputField label="Expiration" createType="date"
+            <InputField label="Expiration" createType="date" noPointer={true}
              setModalActive={setModalActive}
             value={modalActive.cardDate?.date}
             modalActive={modalActive}  
-            maxLength="5"/>
+            />
             <InputField label="Card Number" createType="number" noPointer={true}
             value={modalActive.cardDate?.number}
             setModalActive={setModalActive}
             modalActive={modalActive} 
             />
-           <InputField label="CW" type="password" value={'123'}  maxLength="3"
+           <InputField label="CW" type="password" value={modalActive.cardDate?.crv}  maxLength="3"
            setModalActive={setModalActive}
            modalActive={modalActive} 
            />

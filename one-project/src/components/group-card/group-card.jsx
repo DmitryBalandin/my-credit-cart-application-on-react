@@ -14,25 +14,29 @@ const GroupCard = ({ cardActive, setCardActive, setModalAcive, modalActive }) =>
             number: "1234 1234 1243 5645",
             date: "09/13",
             img: iconBank1,
-            namePerson:"Ivan Stallone"
+            namePerson:"Ivan Stallone",
+            crv:"343"
         }, {
             name: "Expiries",
             number: "3245 7876 9878 7876",
             date: "06/17",
             img: iconBank2,
-            namePerson:"Igor Shreck"
+            namePerson:"Igor Shreck",
+            crv:"567"
         }, {
             name: "Expiries",
             number: "3245 7876 9878 7876",
             date: "08/24",
             img: iconBank3,
-            namePerson:"Maili Sayrys"
+            namePerson:"Maili Sayrys",
+            crv:"876"
         }, {
             name: "Expiries",
             number: "3435 8797 9658 3455",
             date: "07/08",
             img: iconBank4,
-            namePerson:"Bendgamin Button"
+            namePerson:"Bendgamin Button",
+            crv:"876"
         }];
 
     return (

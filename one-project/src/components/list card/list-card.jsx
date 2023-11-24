@@ -22,7 +22,8 @@ const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive,m
                 number: listDateCard.number,
                 date: listDateCard.date,
                 img: listDateCard.img,
-                namePerson:listDateCard.namePerson
+                namePerson:listDateCard.namePerson,
+                crv: listDateCard.crv,
             }
         });
 
