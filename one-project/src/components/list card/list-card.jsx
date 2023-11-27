@@ -5,7 +5,7 @@ import unactiveKeyCard from '../../icons/icon checked unactive.png';
 
 
 
-const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive,modalActive }) => {
+const ListCard = ({ cardActive, setCardActive, valueDateCard, id, setModalAcive,modalActive }) => {
 
 
     const handleClick = (event) => {
@@ -16,14 +16,15 @@ const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive,m
     const handleDOubleCLick = (event) => {
         setModalAcive({
             active: true,
+            addPayment:false,
             cardDate: {
                 id: event.currentTarget.id,
-                name: listDateCard.name,
-                number: listDateCard.number,
-                date: listDateCard.date,
-                img: listDateCard.img,
-                namePerson:listDateCard.namePerson,
-                crv: listDateCard.crv,
+                name: valueDateCard.name,
+                number: valueDateCard.number,
+                date: valueDateCard.date,
+                img: valueDateCard.img,
+                namePerson:valueDateCard.namePerson,
+                crv: valueDateCard.crv,
             }
         });
 
@@ -34,11 +35,11 @@ const ListCard = ({ cardActive, setCardActive, listDateCard, id, setModalAcive,m
             onClick={handleClick}
             onDoubleClick={(event) => handleDOubleCLick(event)}
         >
-            <div><img src={listDateCard.img} alt="ID Bank" /></div>
-            <div>{listDateCard.number}</div>
-            <div>{listDateCard.name}</div>
+            <div><img src={valueDateCard.img} alt="ID Bank" /></div>
+            <div>{valueDateCard.number}</div>
+            <div>{valueDateCard.name}</div>
             <div className='list-card_date'>
-                <span>{listDateCard.date}</span>
+                <span>{valueDateCard.date}</span>
                 <span>Default</span>
             </div>
             <div>

@@ -1,10 +1,38 @@
 
-const listDateCard=[
-    {
-        name:"VISA",
-        number:"1234 1234 1243 5645",
-        date:"09/13",
-        img: src('../../icons/icons-card/contact.png')
-    }
-];
+import iconBank1 from '../icons/icons-card/alfabank-red.png';
+import iconBank2 from '../icons/icons-card/cirrus.png';
+import iconBank3 from '../icons/icons-card/egold.png';
+import iconBank4 from '../icons/icons-card/easypay.png';
 
+const dateCards =
+[{
+    name: "Expiries",
+    number: "1234 1234 1243 5645",
+    date: "09/13",
+    img: iconBank1,
+    namePerson:"Ivan Stallone",
+    crv:"343"
+}, {
+    name: "Expiries",
+    number: "3245 7876 9878 7876",
+    date: "06/17",
+    img: iconBank2,
+    namePerson:"Igor Shreck",
+    crv:"567"
+}, {
+    name: "Expiries",
+    number: "3245 7876 9878 7876",
+    date: "08/24",
+    img: iconBank3,
+    namePerson:"Maili Sayrys",
+    crv:"876"
+}, {
+    name: "Expiries",
+    number: "3435 8797 9658 3455",
+    date: "07/08",
+    img: iconBank4,
+    namePerson:"Bendgamin Button",
+    crv:"876"
+}];
+
+export default dateCards;

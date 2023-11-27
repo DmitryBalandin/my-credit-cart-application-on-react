@@ -5,6 +5,7 @@ import BtnSubmit from "../btn-submit/btn-submit";
 import GroupCard from "../group-card/group-card";
 import Modal from "../modal/modal";
 
+import dateCards from "../../date card/date-card";
 import iconBank1 from '../../icons/icons-card/alfabank-red.png';
 import iconBank2 from '../../icons/icons-card/cirrus.png';
 import iconBank3 from '../../icons/icons-card/egold.png';
@@ -16,9 +17,9 @@ const Container = () => {
 
     
 
-
     const [modalActive, setModalAcive] = useState({
         active: false,
+        addPayment:false,
         cardDate: {
             id: null,
             name: "",
@@ -32,9 +33,10 @@ const Container = () => {
     
     const [cardActive, setCardActive] = useState({
         active: false,
+        
     });
 
-
+    const [listDateCard, setListCardDate] = useState(dateCards);
 
     return (
         <div className="main-body" onClick={() => {
@@ -44,6 +46,7 @@ const Container = () => {
                 <Header />
                 <form action="" className="screen_form">
                     <GroupCard
+                        listDateCard={listDateCard}
                         setCardActive={setCardActive}
                         cardActive={cardActive}
                         modalActive={modalActive}
@@ -53,8 +56,12 @@ const Container = () => {
                 </form>
             </div>
             <Modal
+                listDateCard={listDateCard}
+                setListCardDate={setListCardDate}
                 modalActive={modalActive}
                 setModalActive={setModalAcive}
+                setCardActive={setCardActive}
+                cardActive={cardActive}
             />
         </div>
     )
