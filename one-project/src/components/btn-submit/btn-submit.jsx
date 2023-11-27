@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import './btn-submit.css'
 import classNames from 'classnames/bind';
 
@@ -9,6 +9,33 @@ import iconBank4 from '../../icons/icons-card/easypay.png';
 
 const BtnSubmit = ({ classes, children = "Submit ", listDateCard,
     setListCardDate, modalActive, setModalActive, action }) => {
+
+    const ref = useRef(false);
+
+    const on = () => {ref.current =true; console.log('on', ref.current) };
+    const off = () => {ref.current = false; console.log('off',ref.current)};
+
+    // const ref = useRef((ref) => {
+    //     if (!ref.current) {
+    //         return;
+    //     }
+    //     const node = ref.current;
+
+    //     node.addEventListener('mouseenter', on)
+    //     node.addEventListener('mousemove', on)
+    //     node.addEventListener('mouseleave', off)
+
+    //     return function () {
+    //         node.removeEventListener('mouseenter', on)
+    //         node.removeEventListener('mousemove', on)
+    //         node.removeEventListener('mouseleave', off)
+    //     };
+    // },[]);
+
+    
+
+    
+
 
     const defaultStateModal = {
         active: false,
@@ -75,12 +102,12 @@ const BtnSubmit = ({ classes, children = "Submit ", listDateCard,
     }
     return (
 
-        <button onClick={clickBtn[action]}
-            type="button" className={classNames('btn', classes)
+        <button onMouseEnter={on} onMouseMove={on} onMouseLeave={off} onClick={clickBtn[action] }
+            type="button" className={classNames('btn', classes, ref.current ? 'btn-hover' : "")
             }
         >{children}</button>
 
     )
-};
+}
 
 export default BtnSubmit;
